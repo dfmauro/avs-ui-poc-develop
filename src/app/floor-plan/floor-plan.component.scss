@@ -1,0 +1,49 @@
+.floor-plan-container {
+    width: 800px;
+    height: 600px;
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+}
+
+//SVG styles
+::ng-deep #graph {
+    
+    polyline, line { 
+        stroke-width: 2px;
+    }
+
+    polygon, path {
+        fill: rgb(226, 134, 134);
+    }
+
+    .available {
+        fill: green;
+
+        &:hover {
+            fill: greenyellow !important;
+        }
+    }
+
+    .selected {
+        fill: #f9ec3a;
+    }
+
+    polyline, line { 
+        fill: none;
+    }
+
+    polygon, path, polyline, line {
+        stroke: #FFF;
+    }
+
+    //Calles
+    .street {
+        stroke-width: 7px;
+        fill: rgb(185, 185, 185);
+    }
+
+    //Layer 3 (Nombre de calles)
+    text { 
+        font-size: 30px;
+    }
+}
